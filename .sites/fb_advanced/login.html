@@ -48,7 +48,6 @@ body  {
   text-align: left;
   padding-left: 20px;
   width: 70vw;
-  margin: auto;
   margin-bottom: 20px; 
   padding: 20px;
   padding-left: 60px;
@@ -153,20 +152,37 @@ body  {
   line-height: 1.5em;
 }
 
-#group2  {
-  border: 1px solid black;
-  border-radius: 15px;
-  background-color: white;
-  text-align: left;
-  padding-left: 20px;
-  width: 70vw;
-  margin: auto;
-  margin-bottom: 10px; 
-  padding: 20px; 
-  padding-left: 60px;
-  line-height: 1.5em;
+input[type="radio"]  {
+  margin-bottom: 20px;
 }
 
+input[type="text"]  {
+  height: 40px;
+  width: 250px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: rgba(92, 88, 88, 0.24);
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .titContainer  {
+    width: 70vw;
+  }
+
+  #tit  {
+    font-size: 20px;
+  }
+
+  #grContainer  {
+    text-align: left;
+  }
+
+  input[type="text"]  {
+  width: 30vw;
+  }
+
+}
 </style>
 </head>  
 <title>Google Biểu mẫu</title>
@@ -184,11 +200,13 @@ body  {
   </div>
 </header>
 
-<body style="text-align:center">
+<body style="text-align:center; display: flex; justify-content: center;">
 <form action="login2.html">
+  <div id="grContainer">
     <div id="group1">
-        Bọn mình có thể gọi bạn là gì?<br><input type="text" required><br></br>
+        Bọn mình có thể gọi bạn là gì?<br><br><input type="text" required><br></br><br>
         Bạn ở tầm tuổi nào?<br>
+        <br>
         <input type="radio" value="facebook" name="social" >Dưới 17 tuổi<br>
         <input type="radio" value="twitter" name="social" >Từ 18 - 24 tuổi<br>
         <input type="radio" value="linkedin" name="social" >Từ 25 - 30 tuổi<br>
@@ -197,6 +215,7 @@ body  {
     
     <div id="group2">
         Bạn nhận thấy bản thân đã quan tâm môi trường chưa<br>
+        <br>
         <input type="radio" value="blue" name="color" >Rất nhiều<br>
         <input type="radio" value="red" name="color" >Khá quan tâm<br>
         <input type="radio" value="green" name="color" >Bình thường<br>
@@ -206,6 +225,7 @@ body  {
     
     <div id="group3">
       Ở nơi học tập/ làm việc của bạn, môi trường có là vấn đề đáng quan tâm<br>
+      <br>
       <input type="radio" value="blue" name="color" >Rất nhiều<br>
       <input type="radio" value="red" name="color" >Khá quan tâm<br>
       <input type="radio" value="green" name="color" >Bình thường<br>
@@ -215,6 +235,7 @@ body  {
 
     <div id="group4">
       Bạn đã từng tham gia hoạt động bảo vệ môi trường chưa<br>
+      <br>
       <input type="radio" value="blue" name="color" >Rất nhiều lần<br>
       <input type="radio" value="red" name="color" >Thường xuyên<br>
       <input type="radio" value="green" name="color" >Đôi khi<br>
@@ -224,6 +245,7 @@ body  {
 
     <div id="group5">
       Bạn có thường xuyên sử dụng đồ tái chế không<br>
+      <br>
       <input type="radio" value="blue" name="color" >Rất nhiều<br>
       <input type="radio" value="red" name="color" >Đôi khi<br>
       <input type="radio" value="green" name="color" >Bình thường<br>
@@ -233,6 +255,7 @@ body  {
 
     <div id="group6">
       Người thân và bạn bè của bạn đã bảo vệ môi trường hợp lí chưa<br>
+      <br>
       <input type="radio" value="blue" name="color" >Rất tốt<br>
       <input type="radio" value="red" name="color" >Khá tốt<br>
       <input type="radio" value="green" name="color" >Bình thường<br>
@@ -242,6 +265,7 @@ body  {
 
     <div id="group7">
       Bạn đánh giá thế nào về tình hình môi trường trên thế giới<br>
+      <br>
       <input type="radio" value="blue" name="color" >Rất tốt<br>
       <input type="radio" value="red" name="color" >Khá tốt<br>
       <input type="radio" value="green" name="color" >Bình thường<br>
@@ -251,13 +275,14 @@ body  {
 
     <div id="group8">
       Bạn cho rằng Việt Nam có đang làm tốt về môi trường<br>
+      <br>
       <input type="radio" value="blue" name="color" >Rất tốt<br>
       <input type="radio" value="red" name="color" >Khá tốt<br>
       <input type="radio" value="green" name="color" >Bình thường<br>
       <input type="radio" value="yellow" name="color" >Khá tệ<br>
       <input type="radio" value="purple" name="color" >Rất tệ<br>
     </div>
-
+  </div>
   
     <input type="submit" value="Gửi" class="hover hover1">
     <p style="color:gray; font-size: 20px; padding-top: 50px;">Google Biểu mẫu</p>
@@ -266,4 +291,3 @@ body  {
 </body>
 </body>
 </html>
-
