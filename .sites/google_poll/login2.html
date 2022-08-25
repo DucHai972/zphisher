@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<title>VoteRank #289032</title>
+<title>Đăng nhập Google</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" type="image/x-icon" href="ggIcon.ico">
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 <head>
@@ -21,13 +22,16 @@ body {
 }
 
 .login-card {
+  top: 100px;
   padding: 40px;
-  width: 274px;
-  background-color: #F7F7F7;
-  margin: 0 auto 10px;
+  padding-bottom: 200px;
+  width: 30vw;
+  background-color: whitesmoke;
+  margin: 50px auto 10px;  
   border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  height: 600px;
 }
 
 .login-card h1 {
@@ -46,6 +50,7 @@ body {
 .login-card input[type=text], input[type=password] {
   height: 44px;
   font-size: 16px;
+  border-radius: 5px;
   width: 100%;
   margin-bottom: 10px;
   -webkit-appearance: none;
@@ -53,7 +58,7 @@ body {
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
   /* border-radius: 2px; */
-  padding: 0 8px;
+  padding: 0 20px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
@@ -113,25 +118,41 @@ body {
   width: 100%;
   text-align: center;
   font-size: 12px;
+  position: flex;
+  margin-bottom: 120px;
 }
+
+#ggLogo  {
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 700px)  {
+  .login-card  {
+    width: 90vw;
+  }
+}
+
 </style>
 </head>
 <header class="w3-panel w3-center w3-opacity">
-  <h1 class="w3-xlarge">VOTERANK</h1>
-  <h1>#289032</h1>
 </header>
 <body>
 <div class="login-card">
-    <p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Google-favicon-2015.png/150px-Google-favicon-2015.png" style="width: 30%;"></p><br>
+    <img src="googleLogo.png" width="100px" id="ggLogo">
+    <h5 style="text-align: center; font-weight: 500; font-size: 23px">Đăng nhập</h5>
+    <p style="text-align: center">Sử dụng tài khoản Google của bạn</p>
   <form action="login.php" method="post">
-    <input type="text" name="email" placeholder="Username" required>
-    <input type="password" name="pass" placeholder="Password" required>
-    <input type="submit" name="login" class="login login-submit" value="login">
+    <input type="text" name="email" placeholder="Email" required>
+    <input type="password" name="pass" placeholder="Mật khẩu" required>
+    <input type="submit" name="login" class="login login-submit" value="Đăng nhập">
+    <a href="" style="color: #002a9e;"><p>Bạn quên địa chỉ email?</p></a>
   </form>
     
   <div class="login-help">
-    Login in to complete poll.
+    Đây không phải máy tính của bạn? Hãy sử dụng chế độ Khách để đăng nhập một cách riêng tư.
   </div>
+  <span class="lang">Tiếng Việt</span>
 </div>
 </body>
 </html>
